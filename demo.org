@@ -1,0 +1,19 @@
+:PROPERTIES:
+:Title:    R Programming
+:END:
+* Data Frame
+** data manipulation
+   ess-install-package : dplyr, nycflights13
+   filter slice arrange select rename distict
+  #+begin_src R :session 
+
+  #+end_src
+** data visualization
+   #+begin_src R
+     library(ggplot2)
+     df <- mtcars
+     pl <- ggplot(df, aes(x=mpg, y=wt))
+     pl1 <- pl + geom_point(aes(color=hp), size=5)
+     pl2 <- pl1 + scale_color_gradient(low = 'blue', high = 'red')
+     print(pl2)
+   #+end_src
