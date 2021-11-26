@@ -1,4 +1,5 @@
-# udemy R summary
+* udemy R summary
+** dplyr  
 #+begin_src R
   library("dplyr")
   starwars %>%
