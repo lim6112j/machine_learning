@@ -20,6 +20,7 @@
      pl2 <- pl1 + scale_color_gradient(low = 'blue', high = 'red')
      print(pl2)
    #+end_src
+# command : M-x org-babel-execute-src-block-maybe 
 * does /not/ work; produces a file, but it does 
 * not contain a valid graphics format
 #+begin_src R :file 1.png :results file graphics
