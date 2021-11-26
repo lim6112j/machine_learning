@@ -20,9 +20,10 @@
      pl2 <- pl1 + scale_color_gradient(low = 'blue', high = 'red')
      print(pl2)
    #+end_src
-* command : M-x org-babel-execute-src-block-maybe [[https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-R.html][org babel tutorial]] 
-* does /not/ work; produces a file, but it does 
-* not contain a valid graphics format
+* ORG BABEL
+** command : M-x org-babel-execute-src-block-maybe [[https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-R.html][org babel tutorial]] 
+** does /not/ work; produces a file, but it does 
+** not contain a valid graphics format
 #+begin_src R :file 1.png :results file graphics
 library(lattice)
 xyplot(1:10 ~ 1:10)
@@ -31,14 +32,14 @@ xyplot(1:10 ~ 1:10)
 #+RESULTS:
 [[file:1.png]]
 
-* does produce a file, by printing object
+** does produce a file, by printing object
 #+begin_src R :file 2.png :results graphics file
 library(lattice)
 print(xyplot(1:10 ~ 1:10))
 #+end_src
    #+RESULTS:
    [[file:2.png]]
-* does produce a file, by using :results output
+** does produce a file, by using :results output
 #+begin_src R :file 3.png :results output graphics file
 library(lattice)
 xyplot(1:10 ~ 1:10)
@@ -46,7 +47,7 @@ xyplot(1:10 ~ 1:10)
 
 #+RESULTS:
 [[file:3.png]]
-* does produce a file, by evaluating in :session
+** does produce a file, by evaluating in :session
 #+begin_src R :file 4.png :session :results graphics file
 library(lattice)
 xyplot(1:10 ~ 1:10)
