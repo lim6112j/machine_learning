@@ -16,7 +16,13 @@
 [[file:decision.png]]
 
 # random forests
-#+begin_src R
-library(randomForest)
+#+begin_src R :file output :results file 
+  library(rpart)
+  library(randomForest)
+  rf.model <- randomForest(Kyphosis ~ . , data = kyphosis)
+  print(rf.model)
 #+end_src
+
+#+RESULTS:
+[[file:output]]
 
