@@ -23,6 +23,13 @@
   print(rf.model)
 #+end_src
 
-#+RESULTS:
-[[file:output]]
+# Support Vector Machines
+#+begin_src R
+  library(ISLR)
+  head(iris)
+  library(e1071)
+  model <- svm(Species ~ ., data=iris)
+  summary(model)
+#+end_src
 
+#+RESULTS:
